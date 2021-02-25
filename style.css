@@ -1,0 +1,176 @@
+/*css reset*/
+*{margin:0;padding:0;box-sizing:border-box;}
+a{color:black;text-decoration: none;}
+ul{
+    margin-left:10px;
+}
+li{
+    padding:6px;
+ }
+/*common css*/
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+body{ 
+    display:grid;
+    grid:auto auto 30px/1fr 300px 700px 1fr;
+    font:14px/1.5 Arial;
+    color:#333333;
+}
+/*header css*/
+header{
+    grid-row:1;
+    grid-column:1/span 4;
+    background:#009FE8;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+header img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+
+}
+header h1{
+    font-size:18px;
+}
+header p{
+    font-size:14px;
+    color:#CCCCCC;
+}
+/*aside css*/
+aside{
+    grid-row:2;
+    grid-column:2;
+}
+aside section{
+    display:grid;
+    grid:auto auto/50px 120px 1fr;
+    align-items:center;
+    margin:20px;
+}
+aside section svg{
+    grid-row:1;
+    grid-column:1;
+    font-size:22px;
+
+}
+aside section>h2{
+    grid-row:1;
+    grid-column:2;
+    font-size:18px;
+}
+aside section>hr{
+    grid-row:1;
+    grid-column:3;
+    height:4px;
+    background:#009FE8;
+}
+/*basic details css*/
+aside section .details{
+    grid-row:2;
+    grid-column:2/span 2;
+    margin:10px 0;
+}
+aside section .details .item{
+    padding-top:10px;
+}
+aside section .details .item svg{
+    font-size:16px;
+    margin-right:20px;
+}
+/*skills css*/
+aside section ul{
+    grid-row:2;
+    grid-column:2/span 2;
+}
+/*skills pic css*/
+aside section dl{
+    grid-row:2;
+    grid-column:2/span 2;
+}
+aside section dl>dt{
+    margin:10px 0;
+}
+aside section dl>dd{
+    height:4px;
+    background:#EAEAEA;
+    margin:8px 0;
+}
+aside section dl>dd>i{
+    height:4px;
+    background:#009FE8;
+    display:block;
+}
+/*main css*/
+main{
+    grid-row:2;
+    grid-column:3;
+}
+main section{
+    display:grid;
+    grid:auto auto auto auto auto/50px 120px 1fr auto;
+    align-items:center;
+    margin:20px;
+}
+main section svg{
+    grid-row:1;
+    grid-column:1;
+    font-size:22px;
+ }
+ main section h2{
+     grid-row:1;
+     grid-column:2;
+     font-size:18px;
+ }
+ main section hr{
+     grid-row:1;
+     grid-column:3/5;
+     height:4px;
+     background:#009FE8;
+ }
+ main section .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8{
+     padding:10px 6px;
+ }
+ main section .item1{
+     grid-row:2;
+     grid-column:2;
+ }
+ main section .item2{
+     grid-row:2;
+     grid-column:3;
+ }
+ main section .item3{
+    grid-row:2;
+    grid-column:4;
+}
+main section .item4{
+    grid-row:3;
+    grid-column:3;
+}
+main section .item5{
+    grid-row:4;
+    grid-column:2;
+}
+main section .item6{
+    grid-row:4;
+    grid-column:3;
+}
+main section .item7{
+   grid-row:4;
+   grid-column:4;
+}
+main section .item8{
+   grid-row:5;
+   grid-column:3;
+}
+/*footer css*/
+footer{
+    grid-row:3;
+    grid-column:1/span 4;
+   text-align:center;
+}
